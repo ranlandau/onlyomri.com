@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OnlyOmri — Omri Don: The New York Residency</title>
+<meta name="description" content="One office. One man. Limited engagement. Omri Don is coming to Splitit New York.">
+<meta property="og:title" content="OnlyOmri — Omri Don: The New York Residency">
+<meta property="og:description" content="One office. One man. Limited engagement. Omri Don is coming to Splitit New York.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0710; --bg2:#160c22; --card:#1c1029; --line:#3a2452;
+    --pink:#ff3fa4; --gold:#ffd166; --cyan:#4de3ff; --text:#f7f1ff; --muted:#b9a8cc;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+  body{background:
+    radial-gradient(1200px 600px at 20% -10%, #3a1258 0%, transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, #0e3a4a 0%, transparent 60%),
+    var(--bg)}
+  a{color:var(--cyan)}
+  .display{font-family:'Bebas Neue',Impact,sans-serif;letter-spacing:.02em;line-height:.92}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  section{padding:72px 0}
+  h2.display{font-size:clamp(40px,7vw,72px);margin:0 0 8px}
+  .kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.25em;font-size:12px;font-weight:800}
+  .sub{color:var(--muted);max-width:60ch;font-size:17px;line-height:1.6}
+
+  /* ticker */
+  .ticker{background:var(--pink);color:#160016;font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:13px;overflow:hidden;white-space:nowrap;padding:8px 0;border-bottom:3px solid var(--gold)}
+  .ticker span{display:inline-block;padding-left:100%;animation:tick 38s linear infinite}
+  @keyframes tick{to{transform:translateX(-100%)}}
+
+  /* hero */
+  .hero{padding:80px 0 60px;text-align:center;position:relative}
+  .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.04);padding:8px 14px;border-radius:999px;font-size:13px;color:var(--muted);margin-bottom:24px}
+  .badge .dot{width:8px;height:8px;border-radius:50%;background:#ff4d4d;box-shadow:0 0 0 0 rgba(255,77,77,.7);animation:pulse 1.6s infinite}
+  @keyframes pulse{70%{box-shadow:0 0 0 10px rgba(255,77,77,0)}100%{box-shadow:0 0 0 0 rgba(255,77,77,0)}}
+  .hero h1{font-size:clamp(72px,16vw,200px);margin:0;background:linear-gradient(180deg,#fff 0%,#ffd6ee 40%,var(--pink) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 10px 40px rgba(255,63,164,.35))}
+  .hero .tag{font-size:clamp(22px,4vw,40px);color:var(--gold);margin:10px 0 0}
+  .hero p.lede{color:var(--muted);font-size:18px;max-width:58ch;margin:22px auto 0;line-height:1.6}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+  .btn{appearance:none;border:0;cursor:pointer;font:inherit;font-weight:800;padding:16px 26px;border-radius:14px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:transform .12s ease}
+  .btn:active{transform:scale(.97)}
+  .btn.primary{background:var(--pink);color:#1a0010;box-shadow:0 12px 40px rgba(255,63,164,.35)}
+  .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+  .marquee-lights{display:flex;justify-content:center;gap:10px;margin-top:40px}
+  .marquee-lights i{width:10px;height:10px;border-radius:50%;background:var(--gold);opacity:.35;animation:blink 1.2s infinite}
+  .marquee-lights i:nth-child(odd){animation-delay:.6s}
+  @keyframes blink{50%{opacity:1;box-shadow:0 0 12px var(--gold)}}
+
+  /* countdown */
+  .count{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:720px;margin:36px auto 0}
+  .count div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 8px}
+  .count b{display:block;font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(40px,7vw,64px);color:#fff;line-height:1}
+  .count small{color:var(--muted);text-transform:uppercase;letter-spacing:.2em;font-size:11px}
+  .count-note{color:var(--muted);font-size:13px;margin-top:12px}
+
+  /* grid cards */
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:32px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;position:relative;overflow:hidden}
+  .card h3{margin:0 0 8px;font-size:20px}
+  .card p{margin:0;color:var(--muted);line-height:1.55;font-size:15px}
+  .card .price{font-family:'Bebas Neue',Impact,sans-serif;font-size:44px;color:var(--gold);line-height:1;margin:14px 0 4px}
+  .card .per{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.15em}
+  .card ul{margin:16px 0 0;padding:0;list-style:none}
+  .card li{padding:8px 0;border-top:1px dashed var(--line);font-size:14px}
+  .card li::before{content:"★ ";color:var(--pink)}
+  .card.hot{border-color:var(--pink);box-shadow:0 0 0 1px var(--pink) inset, 0 20px 60px rgba(255,63,164,.15)}
+  .ribbon{position:absolute;top:14px;right:-38px;transform:rotate(35deg);background:var(--pink);color:#1a0010;font-size:11px;font-weight:800;letter-spacing:.15em;padding:6px 48px;text-transform:uppercase}
+  .card .btn{margin-top:18px;width:100%;justify-content:center;padding:12px}
+
+  /* tour dates */
+  .dates{margin-top:30px;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+  .date{display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:center;padding:18px 22px;border-top:1px solid var(--line);background:var(--card)}
+  .date:first-child{border-top:0}
+  .date .d{font-family:'Bebas Neue',Impact,sans-serif;font-size:28px;color:var(--gold);line-height:1}
+  .date .d small{display:block;font-size:12px;color:var(--muted);font-family:Inter;letter-spacing:.2em}
+  .date .city{font-weight:800}
+  .date .venue{color:var(--muted);font-size:14px}
+  .pill{font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;padding:8px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+  .pill.sold{background:#3a0f2a;border-color:var(--pink);color:var(--pink)}
+  .pill.live{background:#0e3a4a;border-color:var(--cyan);color:var(--cyan)}
+  .pill.gold{background:#3a2e0f;border-color:var(--gold);color:var(--gold)}
+
+  /* reviews */
+  .quotes{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:32px}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+  .quote .stars{color:var(--gold);letter-spacing:2px;margin-bottom:10px}
+  .quote blockquote{margin:0;font-size:18px;line-height:1.5;font-weight:600}
+  .quote cite{display:block;margin-top:14px;color:var(--muted);font-style:normal;font-size:14px}
+
+  /* gallery */
+  .gallery{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:32px}
+  .shot{aspect-ratio:4/5;border-radius:18px;border:1px solid var(--line);position:relative;overflow:hidden;background:
+    linear-gradient(135deg,#2a1540,#0f2a3a)}
+  .shot img{width:100%;height:100%;object-fit:cover;display:block}
+  .shot .cap{position:absolute;left:0;right:0;bottom:0;padding:14px;background:linear-gradient(transparent,rgba(0,0,0,.75));font-size:13px;font-weight:600}
+  .shot .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:13px;text-align:center;padding:16px}
+  .shot .ph b{font-size:52px;filter:grayscale(.2)}
+  .shot .lock{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:11px;font-weight:800;letter-spacing:.1em}
+
+  /* faq */
+  details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:0 22px;margin-top:12px}
+  summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:800;display:flex;justify-content:space-between;align-items:center}
+  summary::after{content:"+";color:var(--pink);font-size:24px;font-weight:400}
+  details[open] summary::after{content:"–"}
+  details p{margin:0 0 18px;color:var(--muted);line-height:1.6}
+
+  /* applause */
+  .applause{text-align:center;padding:60px 0 80px}
+  .applause .big{font-family:'Bebas Neue',Impact,sans-serif;font-size:clamp(60px,12vw,120px);line-height:1;color:var(--gold)}
+  .applause .lbl{color:var(--muted);text-transform:uppercase;letter-spacing:.25em;font-size:12px}
+
+  footer{border-top:1px solid var(--line);padding:40px 0 60px;color:var(--muted);font-size:13px;line-height:1.7;text-align:center}
+  footer .logo{font-family:'Bebas Neue',Impact,sans-serif;font-size:28px;color:var(--text);letter-spacing:.05em}
+  #confetti{position:fixed;inset:0;pointer-events:none;z-index:50}
+  @media (max-width:640px){
+    .date{grid-template-columns:80px 1fr;}
+    .date .pill{grid-column:1/-1;justify-self:start}
+    section{padding:56px 0}
+  }
+</style>
+</head>
+<body>
+<canvas id="confetti"></canvas>
+
+<div class="ticker"><span>★ Omri Don is coming to New York ★ One office. One man. Limited engagement. ★ Tel Aviv dates: SOLD OUT ★ Now accepting coffee invitations ★ Pay for your fandom in 3 easy installments. No interest. Just Omri. ★ Omri Don is coming to New York ★ One office. One man. Limited engagement. ★ Tel Aviv dates: SOLD OUT ★ Now accepting coffee invitations ★</span></div>
+
+<header class="hero wrap">
+  <div class="badge"><i class="dot"></i> LIVE FROM SPLITIT NEW YORK · LIMITED ENGAGEMENT</div>
+  <h1 class="display">OMRI DON</h1>
+  <div class="display tag">THE NEW YORK RESIDENCY</div>
+  <p class="lede">For years, Tel Aviv kept him to itself. Now, for a strictly limited run, the man, the myth, the guy-who-always-has-a-charger is taking his talents to Manhattan. Bring snacks. He'll bring the energy.</p>
+  <div class="cta">
+    <button class="btn primary" onclick="applaud(40)">👏 Give a standing ovation</button>
+    <a class="btn ghost" href="#tiers">See fan tiers</a>
+  </div>
+
+  <div class="count" id="count">
+    <div><b id="cd-d">--</b><small>days</small></div>
+    <div><b id="cd-h">--</b><small>hours</small></div>
+    <div><b id="cd-m">--</b><small>minutes</small></div>
+    <div><b id="cd-s">--</b><small>seconds</small></div>
+  </div>
+  <div class="count-note" id="count-note">until Omri lands (date subject to Omri's calendar, jet lag, and at least one “quick call”)</div>
+
+  <div class="marquee-lights"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</header>
+
+<section class="wrap" id="tour">
+  <div class="kicker">World tour 2026</div>
+  <h2 class="display">Tour dates</h2>
+  <p class="sub">A career-spanning run across two continents, one time zone at a time.</p>
+  <div class="dates">
+    <div class="date"><div class="d">TLV<small>2019–2026</small></div><div><div class="city">Tel Aviv, Israel</div><div class="venue">Splitit HQ · The Good Coffee Machine Stage</div></div><span class="pill sold">Sold out</span></div>
+    <div class="date"><div class="d">JFK<small>arrival</small></div><div><div class="city">Queens, New York</div><div class="venue">Terminal 4 · Baggage carousel of destiny</div></div><span class="pill gold">Meet &amp; greet</span></div>
+    <div class="date"><div class="d">NYC<small>residency</small></div><div><div class="city">Manhattan, New York</div><div class="venue">Splitit New York · The Big Whiteboard</div></div><span class="pill live">Now playing</span></div>
+    <div class="date"><div class="d">BK<small>rumored</small></div><div><div class="city">Brooklyn, New York</div><div class="venue">Unannounced coffee crawl · “not a work thing”</div></div><span class="pill">Rumored</span></div>
+    <div class="date"><div class="d">TLV<small>encore</small></div><div><div class="city">Tel Aviv, Israel</div><div class="venue">Return leg · He'll say it was “fine” · It was legendary</div></div><span class="pill">Encore</span></div>
+  </div>
+</section>
+
+<section class="wrap" id="tiers">
+  <div class="kicker">Exclusive access</div>
+  <h2 class="display">Fan tiers</h2>
+  <p class="sub">Because we're Splitit, every tier is available in installments. Zero interest. 100% Omri.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Window Waver</h3>
+      <div class="price">$0</div><div class="per">or 3 × $0 / month</div>
+      <p>The people's tier.</p>
+      <ul>
+        <li>Wave at Omri through the glass</li>
+        <li>Receive one (1) nod back</li>
+        <li>Access to public Slack reactions</li>
+      </ul>
+      <button class="btn ghost" onclick="applaud(10)">Join for free</button>
+    </div>
+    <div class="card hot">
+      <span class="ribbon">Most popular</span>
+      <h3>Coffee Companion</h3>
+      <div class="price">$12</div><div class="per">or 3 × $4 / month</div>
+      <p>Your daily dose of Don.</p>
+      <ul>
+        <li>One coffee run per day, his shout</li>
+        <li>Unlimited “so how's Tel Aviv?” questions</li>
+        <li>Priority seating at the lunch table</li>
+        <li>Exclusive hummus recommendations</li>
+      </ul>
+      <button class="btn primary" onclick="applaud(25)">Subscribe (in installments)</button>
+    </div>
+    <div class="card">
+      <h3>Whiteboard VIP</h3>
+      <div class="price">$99</div><div class="per">or 3 × $33 / month</div>
+      <p>For the true connoisseur.</p>
+      <ul>
+        <li>Private whiteboard session (markers included)</li>
+        <li>Behind-the-scenes: how he really feels about the subway</li>
+        <li>Signed sticky note</li>
+        <li>Your name in the credits below</li>
+      </ul>
+      <button class="btn ghost" onclick="applaud(60)">Go VIP</button>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="reviews">
+  <div class="kicker">What the critics are saying</div>
+  <h2 class="display">Rave reviews</h2>
+  <div class="quotes">
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“He walked in, said ‘quick question’, and forty minutes later we had a roadmap. Riveting.”</blockquote><cite>— The Tel Aviv Office</cite></div>
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“Finally, someone who reheats leftovers with the confidence of a Michelin chef.”</blockquote><cite>— The Kitchen Microwave, TLV</cite></div>
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“A performance so consistent I set my clock by his ‘on my way’ message.”</blockquote><cite>— Slack, #random</cite></div>
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“I've reviewed a lot of engineers. None of them have ever asked how I'm doing. He did.”</blockquote><cite>— The Office Plant</cite></div>
+    <div class="quote"><div class="stars">★★★★☆</div><blockquote>“Great guy. Would've been five stars but he keeps calling it ‘soccer’ to fit in.”</blockquote><cite>— A Concerned Colleague</cite></div>
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“New York has 8 million people. It's about to have one more it can't stop talking about.”</blockquote><cite>— The Splitit NY Office (allegedly)</cite></div>
+  </div>
+</section>
+
+<section class="wrap" id="gallery">
+  <div class="kicker">Behind the scenes</div>
+  <h2 class="display">Exclusive content</h2>
+  <p class="sub">Never-before-seen footage from the Tel Aviv years. Some items still in the vault pending Omri's approval.</p>
+  <div class="gallery">
+    <div class="shot"><div class="ph"><b>☕</b>The Coffee Machine Years<br><small>(photo drop coming)</small></div><span class="lock">UNLOCKED</span><div class="cap">Episode 1 · “Where is the milk”</div></div>
+    <div class="shot"><div class="ph"><b>🧑‍💻</b>Deep in the Code<br><small>(photo drop coming)</small></div><span class="lock">UNLOCKED</span><div class="cap">Episode 2 · “It works on my machine”</div></div>
+    <div class="shot"><div class="ph"><b>🎤</b>The Standup Sessions<br><small>(photo drop coming)</small></div><span class="lock">UNLOCKED</span><div class="cap">Episode 3 · “No blockers”</div></div>
+    <div class="shot"><div class="ph"><b>🗽</b>First Day in NYC<br><small>(coming soon)</small></div><span class="lock">🔒 SOON</span><div class="cap">Episode 4 · “Which way is uptown”</div></div>
+    <div class="shot"><div class="ph"><b>🥯</b>The Bagel Verdict<br><small>(coming soon)</small></div><span class="lock">🔒 SOON</span><div class="cap">Episode 5 · A nation waits</div></div>
+    <div class="shot"><div class="ph"><b>🚇</b>Subway Diaries<br><small>(coming soon)</small></div><span class="lock">🔒 SOON</span><div class="cap">Episode 6 · “Why is it hot down here”</div></div>
+  </div>
+</section>
+
+<section class="wrap" id="faq">
+  <div class="kicker">Frequently asked</div>
+  <h2 class="display">FAQ</h2>
+  <details open><summary>Is this related to any other website with a similar name?</summary><p>Absolutely not. This is a fan club for one very specific colleague. Everyone stays fully clothed and fully caffeinated. The only thing exposed here is our admiration.</p></details>
+  <details><summary>Will Omri bring hummus?</summary><p>Yes. He will also have strong opinions about the hummus already in New York. Prepare accordingly.</p></details>
+  <details><summary>Can I request a song?</summary><p>Omri does not take requests. He does, however, take “quick questions,” which are never quick.</p></details>
+  <details><summary>How long is the residency?</summary><p>Long enough to learn the subway map, not long enough to stop complaining about it.</p></details>
+  <details><summary>What should the NY office prepare?</summary><p>A good chair, a working coffee machine, a whiteboard, and a healthy amount of patience for the phrase “in Tel Aviv we usually…”.</p></details>
+  <details><summary>Who made this?</summary><p>The Tel Aviv office, with love, mild jealousy, and far too much free time on a Thursday afternoon.</p></details>
+</section>
+
+<section class="applause wrap">
+  <div class="lbl">Total standing ovations</div>
+  <div class="big" id="ovations">0</div>
+  <button class="btn primary" onclick="applaud(40)">👏 Applaud again</button>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo">ONLYOMRI.COM</div>
+    <div>A wholesome tribute from the Splitit Tel Aviv office to the Splitit New York office.<br>Not affiliated with any platform of a similar name. No subscriptions were actually sold. Installments were, however, very fair.<br>Omri — we miss you already. Go get 'em.</div>
+  </div>
+</footer>
+
+<script>
+  // ===== CONFIG: set Omri's arrival date here (local NY time) =====
+  const ARRIVAL = new Date('2026-10-12T09:00:00-04:00');
+  // ================================================================
+  function pad(n){return String(n).padStart(2,'0')}
+  function tick(){
+    const now=new Date(); let diff=ARRIVAL-now;
+    if(diff<=0){
+      document.getElementById('count').innerHTML='<div style="grid-column:1/-1"><b>HE HAS LANDED</b><small>New York, you\'re welcome</small></div>';
+      document.getElementById('count-note').textContent='The residency is officially underway.';
+      return;
+    }
+    const d=Math.floor(diff/864e5); diff-=d*864e5;
+    const h=Math.floor(diff/36e5); diff-=h*36e5;
+    const m=Math.floor(diff/6e4); diff-=m*6e4;
+    const s=Math.floor(diff/1e3);
+    document.getElementById('cd-d').textContent=d;
+    document.getElementById('cd-h').textContent=pad(h);
+    document.getElementById('cd-m').textContent=pad(m);
+    document.getElementById('cd-s').textContent=pad(s);
+  }
+  tick(); setInterval(tick,1000);
+
+  // applause counter (per-visitor, survives refresh)
+  let ov=0; try{ov=parseInt(localStorage.getItem('onlyomri_ov')||'0',10)||0}catch(e){}
+  const ovEl=document.getElementById('ovations'); ovEl.textContent=ov.toLocaleString();
+  function applaud(n){
+    ov+=n; ovEl.textContent=ov.toLocaleString();
+    try{localStorage.setItem('onlyomri_ov',String(ov))}catch(e){}
+    burst(n*4);
+  }
+
+  // confetti
+  const cv=document.getElementById('confetti'),ctx=cv.getContext('2d');let parts=[];
+  function size(){cv.width=innerWidth;cv.height=innerHeight}size();addEventListener('resize',size);
+  const colors=['#ff3fa4','#ffd166','#4de3ff','#ffffff','#b26cff'];
+  function burst(n){
+    for(let i=0;i<n;i++)parts.push({x:innerWidth/2+(Math.random()-.5)*200,y:innerHeight*.35,vx:(Math.random()-.5)*14,vy:-Math.random()*14-4,r:Math.random()*6+3,c:colors[i%colors.length],a:1,rot:Math.random()*6});
+    if(!anim)loop();
+  }
+  let anim=false;
+  function loop(){
+    anim=true;ctx.clearRect(0,0,cv.width,cv.height);
+    parts.forEach(p=>{p.vy+=.35;p.x+=p.vx;p.y+=p.vy;p.a-=.012;p.rot+=.1;ctx.save();ctx.globalAlpha=Math.max(p.a,0);ctx.translate(p.x,p.y);ctx.rotate(p.rot);ctx.fillStyle=p.c;ctx.fillRect(-p.r/2,-p.r/2,p.r,p.r*1.6);ctx.restore()});
+    parts=parts.filter(p=>p.a>0&&p.y<cv.height+20);
+    if(parts.length)requestAnimationFrame(loop);else{anim=false;ctx.clearRect(0,0,cv.width,cv.height)}
+  }
+  setTimeout(()=>burst(80),600);
+</script>
+</body>
+</html>

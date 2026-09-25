@@ -3,50 +3,64 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OnlyOmri — Omri Don: The New York Residency</title>
-<meta name="description" content="One office. One man. Limited engagement. Omri Don is coming to Splitit New York.">
-<meta property="og:title" content="OnlyOmri — Omri Don: The New York Residency">
-<meta property="og:description" content="One office. One man. Limited engagement. Omri Don is coming to Splitit New York.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
+<title>OnlyOmri — Omri Don: The Comeback Residency</title>
+<meta name="description" content="Omri Don is going back to make Splitit New York awesome again. One man. One Cavalier Spaniel. Payable in installments.">
+<meta property="og:title" content="OnlyOmri — Omri Don: The Comeback Residency">
+<meta property="og:description" content="Omri Don is going back to make Splitit New York awesome again. One man. One Cavalier Spaniel. Payable in installments.">
+<meta property="og:image" content="https://onlyomri.com/img/ep5-peace.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%2320A5A6'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' font-family='Arial' font-weight='700' fill='%231D252D'%3EO%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0b0710; --bg2:#160c22; --card:#1c1029; --line:#3a2452;
-    --pink:#ff3fa4; --gold:#ffd166; --cyan:#4de3ff; --text:#f7f1ff; --muted:#b9a8cc;
+    /* Splitit palette */
+    --charcoal:#1D252D; --charcoal2:#141a20; --card:#232d37; --line:#3a4651;
+    --teal:#0B8286; --tropical:#20A5A6; --teal30:#85C1C3; --teal10:#CEE6E7;
+    --snow:#FFFFFF; --muted:#B4B6B9; --gold:#ffd166;
   }
   *{box-sizing:border-box}
-  html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+  html,body{margin:0;background:var(--charcoal);color:var(--snow);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
   body{background:
-    radial-gradient(1200px 600px at 20% -10%, #3a1258 0%, transparent 60%),
-    radial-gradient(900px 500px at 90% 10%, #0e3a4a 0%, transparent 60%),
-    var(--bg)}
-  a{color:var(--cyan)}
+    radial-gradient(1200px 600px at 15% -10%, rgba(32,165,166,.35) 0%, transparent 60%),
+    radial-gradient(900px 500px at 90% 5%, rgba(11,130,134,.25) 0%, transparent 60%),
+    var(--charcoal)}
+  a{color:var(--tropical)}
+  em{color:var(--teal30);font-style:normal;font-weight:600}
   .display{font-family:'Bebas Neue',Impact,sans-serif;letter-spacing:.02em;line-height:.92}
   .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
   section{padding:72px 0}
   h2.display{font-size:clamp(40px,7vw,72px);margin:0 0 8px}
-  .kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.25em;font-size:12px;font-weight:800}
-  .sub{color:var(--muted);max-width:60ch;font-size:17px;line-height:1.6}
+  .kicker{color:var(--tropical);text-transform:uppercase;letter-spacing:.25em;font-size:12px;font-weight:800}
+  .sub{color:var(--muted);max-width:64ch;font-size:17px;line-height:1.6}
 
   /* ticker */
-  .ticker{background:var(--pink);color:#160016;font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:13px;overflow:hidden;white-space:nowrap;padding:8px 0;border-bottom:3px solid var(--gold)}
-  .ticker span{display:inline-block;padding-left:100%;animation:tick 38s linear infinite}
+  .ticker{background:var(--tropical);color:var(--charcoal);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:13px;overflow:hidden;white-space:nowrap;padding:8px 0;border-bottom:3px solid var(--teal)}
+  .ticker span{display:inline-block;padding-left:100%;animation:tick 44s linear infinite}
   @keyframes tick{to{transform:translateX(-100%)}}
 
+  /* top bar */
+  .top{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+  .logo{display:flex;align-items:center;gap:10px;font-family:'Bebas Neue',Impact,sans-serif;font-size:26px;letter-spacing:.06em}
+  .logo i{width:28px;height:28px;border-radius:50%;background:var(--tropical);display:inline-grid;place-items:center;color:var(--charcoal);font-family:Inter;font-weight:800;font-size:15px;font-style:normal}
+  .top nav{display:flex;gap:18px;font-size:13px;font-weight:600}
+  .top nav a{color:var(--muted);text-decoration:none}
+  .top nav a:hover{color:var(--snow)}
+  @media (max-width:640px){.top nav{display:none}}
+
   /* hero */
-  .hero{padding:80px 0 60px;text-align:center;position:relative}
+  .hero{padding:50px 0 60px;text-align:center;position:relative}
   .badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.04);padding:8px 14px;border-radius:999px;font-size:13px;color:var(--muted);margin-bottom:24px}
   .badge .dot{width:8px;height:8px;border-radius:50%;background:#ff4d4d;box-shadow:0 0 0 0 rgba(255,77,77,.7);animation:pulse 1.6s infinite}
   @keyframes pulse{70%{box-shadow:0 0 0 10px rgba(255,77,77,0)}100%{box-shadow:0 0 0 0 rgba(255,77,77,0)}}
-  .hero h1{font-size:clamp(72px,16vw,200px);margin:0;background:linear-gradient(180deg,#fff 0%,#ffd6ee 40%,var(--pink) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 10px 40px rgba(255,63,164,.35))}
+  .hero .pre{font-size:clamp(18px,3vw,28px);color:var(--teal30);margin:0 0 6px}
+  .hero h1{font-size:clamp(72px,15vw,190px);margin:0;background:linear-gradient(180deg,#fff 0%,var(--teal10) 45%,var(--tropical) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 10px 40px rgba(32,165,166,.35))}
   .hero .tag{font-size:clamp(22px,4vw,40px);color:var(--gold);margin:10px 0 0}
-  .hero p.lede{color:var(--muted);font-size:18px;max-width:58ch;margin:22px auto 0;line-height:1.6}
+  .hero p.lede{color:var(--muted);font-size:18px;max-width:62ch;margin:22px auto 0;line-height:1.6}
   .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
-  .btn{appearance:none;border:0;cursor:pointer;font:inherit;font-weight:800;padding:16px 26px;border-radius:14px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:transform .12s ease}
+  .btn{appearance:none;border:0;cursor:pointer;font:inherit;font-weight:800;padding:16px 26px;border-radius:14px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:transform .12s ease;color:var(--snow)}
   .btn:active{transform:scale(.97)}
-  .btn.primary{background:var(--pink);color:#1a0010;box-shadow:0 12px 40px rgba(255,63,164,.35)}
-  .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+  .btn.primary{background:var(--tropical);color:var(--charcoal);box-shadow:0 12px 40px rgba(32,165,166,.35)}
+  .btn.ghost{background:transparent;border:1px solid var(--line)}
   .marquee-lights{display:flex;justify-content:center;gap:10px;margin-top:40px}
   .marquee-lights i{width:10px;height:10px;border-radius:50%;background:var(--gold);opacity:.35;animation:blink 1.2s infinite}
   .marquee-lights i:nth-child(odd){animation-delay:.6s}
@@ -59,6 +73,21 @@
   .count small{color:var(--muted);text-transform:uppercase;letter-spacing:.2em;font-size:11px}
   .count-note{color:var(--muted);font-size:13px;margin-top:12px}
 
+  /* stats */
+  .stats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:32px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+  .stat b{display:block;font-family:'Bebas Neue',Impact,sans-serif;font-size:56px;line-height:1;color:var(--tropical)}
+  .stat span{display:block;font-weight:800;margin-top:6px}
+  .stat small{display:block;color:var(--muted);margin-top:6px;line-height:1.5}
+
+  /* timeline */
+  .tl{margin-top:32px;position:relative;padding-left:26px;border-left:2px solid var(--line)}
+  .tl .ev{position:relative;padding:0 0 28px 18px}
+  .tl .ev::before{content:"";position:absolute;left:-34px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--tropical);box-shadow:0 0 0 4px var(--charcoal),0 0 0 6px var(--line)}
+  .tl .yr{font-family:'Bebas Neue',Impact,sans-serif;font-size:26px;color:var(--gold);line-height:1}
+  .tl h3{margin:4px 0 4px;font-size:18px}
+  .tl p{margin:0;color:var(--muted);line-height:1.55;font-size:15px}
+
   /* grid cards */
   .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:32px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;position:relative;overflow:hidden}
@@ -68,9 +97,9 @@
   .card .per{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.15em}
   .card ul{margin:16px 0 0;padding:0;list-style:none}
   .card li{padding:8px 0;border-top:1px dashed var(--line);font-size:14px}
-  .card li::before{content:"★ ";color:var(--pink)}
-  .card.hot{border-color:var(--pink);box-shadow:0 0 0 1px var(--pink) inset, 0 20px 60px rgba(255,63,164,.15)}
-  .ribbon{position:absolute;top:14px;right:-38px;transform:rotate(35deg);background:var(--pink);color:#1a0010;font-size:11px;font-weight:800;letter-spacing:.15em;padding:6px 48px;text-transform:uppercase}
+  .card li::before{content:"★ ";color:var(--tropical)}
+  .card.hot{border-color:var(--tropical);box-shadow:0 0 0 1px var(--tropical) inset, 0 20px 60px rgba(32,165,166,.15)}
+  .ribbon{position:absolute;top:14px;right:-38px;transform:rotate(35deg);background:var(--tropical);color:var(--charcoal);font-size:11px;font-weight:800;letter-spacing:.15em;padding:6px 48px;text-transform:uppercase}
   .card .btn{margin-top:18px;width:100%;justify-content:center;padding:12px}
 
   /* tour dates */
@@ -82,31 +111,31 @@
   .date .city{font-weight:800}
   .date .venue{color:var(--muted);font-size:14px}
   .pill{font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;padding:8px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
-  .pill.sold{background:#3a0f2a;border-color:var(--pink);color:var(--pink)}
-  .pill.live{background:#0e3a4a;border-color:var(--cyan);color:var(--cyan)}
+  .pill.sold{background:#3a1f1f;border-color:#ff7b7b;color:#ff9c9c}
+  .pill.live{background:#0e3a3b;border-color:var(--tropical);color:var(--tropical)}
   .pill.gold{background:#3a2e0f;border-color:var(--gold);color:var(--gold)}
 
   /* reviews */
-  .quotes{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:32px}
+  .quotes{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:32px}
   .quote{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
   .quote .stars{color:var(--gold);letter-spacing:2px;margin-bottom:10px}
   .quote blockquote{margin:0;font-size:18px;line-height:1.5;font-weight:600}
   .quote cite{display:block;margin-top:14px;color:var(--muted);font-style:normal;font-size:14px}
 
   /* gallery */
-  .gallery{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:32px}
-  .shot{aspect-ratio:4/5;border-radius:18px;border:1px solid var(--line);position:relative;overflow:hidden;background:
-    linear-gradient(135deg,#2a1540,#0f2a3a)}
+  .gallery{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:32px}
+  .shot{aspect-ratio:4/5;border-radius:18px;border:1px solid var(--line);position:relative;overflow:hidden;background:linear-gradient(135deg,#1f3238,#0f2a3a)}
   .shot img{width:100%;height:100%;object-fit:cover;display:block}
-  .shot .cap{position:absolute;left:0;right:0;bottom:0;padding:14px;background:linear-gradient(transparent,rgba(0,0,0,.75));font-size:13px;font-weight:600}
+  .shot .cap{position:absolute;left:0;right:0;bottom:0;padding:14px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:13px;font-weight:600;line-height:1.4}
+  .shot .cap b{display:block;color:var(--tropical);font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}
   .shot .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:13px;text-align:center;padding:16px}
-  .shot .ph b{font-size:52px;filter:grayscale(.2)}
-  .shot .lock{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:11px;font-weight:800;letter-spacing:.1em}
+  .shot .ph b{font-size:52px}
+  .shot .lock{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.6);border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:11px;font-weight:800;letter-spacing:.1em}
 
   /* faq */
   details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:0 22px;margin-top:12px}
   summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:800;display:flex;justify-content:space-between;align-items:center}
-  summary::after{content:"+";color:var(--pink);font-size:24px;font-weight:400}
+  summary::after{content:"+";color:var(--tropical);font-size:24px;font-weight:400}
   details[open] summary::after{content:"–"}
   details p{margin:0 0 18px;color:var(--muted);line-height:1.6}
 
@@ -116,7 +145,7 @@
   .applause .lbl{color:var(--muted);text-transform:uppercase;letter-spacing:.25em;font-size:12px}
 
   footer{border-top:1px solid var(--line);padding:40px 0 60px;color:var(--muted);font-size:13px;line-height:1.7;text-align:center}
-  footer .logo{font-family:'Bebas Neue',Impact,sans-serif;font-size:28px;color:var(--text);letter-spacing:.05em}
+  footer .flogo{font-family:'Bebas Neue',Impact,sans-serif;font-size:28px;color:var(--snow);letter-spacing:.05em}
   #confetti{position:fixed;inset:0;pointer-events:none;z-index:50}
   @media (max-width:640px){
     .date{grid-template-columns:80px 1fr;}
@@ -128,13 +157,19 @@
 <body>
 <canvas id="confetti"></canvas>
 
-<div class="ticker"><span>★ Omri Don is coming to New York ★ One office. One man. Limited engagement. ★ Tel Aviv dates: SOLD OUT ★ Now accepting coffee invitations ★ Pay for your fandom in 3 easy installments. No interest. Just Omri. ★ Omri Don is coming to New York ★ One office. One man. Limited engagement. ★ Tel Aviv dates: SOLD OUT ★ Now accepting coffee invitations ★</span></div>
+<div class="ticker"><span>★ Omri Don is going back to New York ★ Making Splitit NY awesome again ★ One man. One Cavalier Spaniel. Nine years of Splitit. ★ Tel Aviv dates: SOLD OUT ★ NYC–ATL shuttle: FREQUENT ★ Baklava supply: LIMITED ★ Pay for your fandom in 3 easy installments. No new credit. Just Omri. ★ Wendy demands a window seat ★ Omri Don is going back to New York ★ Making Splitit NY awesome again ★ One man. One Cavalier Spaniel. Nine years of Splitit. ★ Tel Aviv dates: SOLD OUT ★ NYC–ATL shuttle: FREQUENT ★ Baklava supply: LIMITED ★</span></div>
+
+<div class="wrap top">
+  <div class="logo"><i>O</i> ONLYOMRI</div>
+  <nav><a href="#career">Career</a><a href="#tour">Tour</a><a href="#tiers">Fan tiers</a><a href="#gallery">Exclusive</a><a href="#wendy">Wendy</a><a href="#faq">FAQ</a></nav>
+</div>
 
 <header class="hero wrap">
-  <div class="badge"><i class="dot"></i> LIVE FROM SPLITIT NEW YORK · LIMITED ENGAGEMENT</div>
+  <div class="badge"><i class="dot"></i> SPLITIT NEW YORK · THE COMEBACK RESIDENCY · OPENING 2026</div>
+  <div class="display pre">HEAD OF IMPLEMENTATION, GLOBAL OPERATIONS · SPLITIT SINCE 2017</div>
   <h1 class="display">OMRI DON</h1>
-  <div class="display tag">THE NEW YORK RESIDENCY</div>
-  <p class="lede">For years, Tel Aviv kept him to itself. Now, for a strictly limited run, the man, the myth, the guy-who-always-has-a-charger is taking his talents to Manhattan. Bring snacks. He'll bring the energy.</p>
+  <div class="display tag">MAKING SPLITIT NEW YORK AWESOME AGAIN</div>
+  <p class="lede">Born and raised in Tel Aviv. Joined Splitit in January 2017 when the whole company fit in one room and one WhatsApp group. Moved to New York for Splitit in 2020 (yes, <em>that</em> 2020). Shuttled New York ↔ Atlanta more times than a Delta pilot. Came home to Israel in 2022. Now, by request of the CEO and the demand of absolutely no one else, he's going back to make Splitit New York awesome again. He's bringing the energy, the baklava, and Wendy.</p>
   <div class="cta">
     <button class="btn primary" onclick="applaud(40)">👏 Give a standing ovation</button>
     <a class="btn ghost" href="#tiers">See fan tiers</a>
@@ -146,28 +181,83 @@
     <div><b id="cd-m">--</b><small>minutes</small></div>
     <div><b id="cd-s">--</b><small>seconds</small></div>
   </div>
-  <div class="count-note" id="count-note">until Omri lands (date subject to Omri's calendar, jet lag, and at least one “quick call”)</div>
+  <div class="count-note" id="count-note">until Omri lands (date subject to Omri's calendar, jet lag, Wendy's paperwork, and at least one “quick call”)</div>
 
   <div class="marquee-lights"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
 </header>
 
+<section class="wrap" id="numbers">
+  <div class="kicker">Proven results · sort of</div>
+  <h2 class="display">Omri by the numbers</h2>
+  <p class="sub">Splitit publishes real merchant stats. We borrowed the format. The methodology is “vibes”.</p>
+  <div class="stats">
+    <div class="stat"><b>+26%</b><span>Office mood lift</span><small>Measured the moment he walks in with coffee. Same number as Splitit's average conversion lift. Coincidence? Yes.</small></div>
+    <div class="stat"><b>+23%</b><span>Average lunch order value</span><small>When Omri picks the place. Splitit calls it AOV. We call it “he ordered for the table again”.</small></div>
+    <div class="stat"><b>85%+</b><span>Approval rate</span><small>Splitit approves 85%+ of shoppers. Omri approves 85%+ of merchant integration plans, and 100% of dogs.</small></div>
+    <div class="stat"><b>5 sec</b><span>Time to say yes</span><small>To a coffee run, a merchant call, or a flight to Atlanta. Splitit checkout takes about the same. His “quick question” does not.</small></div>
+    <div class="stat"><b>5</b><span>Job titles</span><small>Integration Engineer → Onboarding Manager → Pre-Sales &amp; Implementation → Head of Implementation US → Head of Implementation, Global Ops. Same desk energy throughout.</small></div>
+    <div class="stat"><b>1</b><span>Cavalier Spaniel</span><small>Wendy. Non-negotiable. Travels in the cabin. Has never once been asked to show a boarding pass.</small></div>
+  </div>
+</section>
+
+<section class="wrap" id="career">
+  <div class="kicker">Nine years. One company. Many airports.</div>
+  <h2 class="display">The Splitit years</h2>
+  <p class="sub">A dramatic retelling of one man's career at a card-linked installments company, told with the seriousness it never asked for.</p>
+  <div class="tl">
+    <div class="ev"><div class="yr">2017 · Tel Aviv</div><h3>Integration Engineer</h3><p>Joins Splitit in January. Plugs merchants into the platform, one API at a time. Learns that “the integration is done” and “the integration is live” are two very different sentences.</p></div>
+    <div class="ev"><div class="yr">2018 · Tel Aviv</div><h3>Onboarding Manager</h3><p>Now he's also the one holding the merchant's hand through go-live. Develops the signature move: answering an email before the sender finishes typing it.</p></div>
+    <div class="ev"><div class="yr">2019 · Tel Aviv</div><h3>Pre-Sales &amp; Implementation Engineer</h3><p>Joins sales calls to explain how installments on an existing credit card work. Every prospect leaves the call understanding Splitit, and slightly wanting to be Omri's friend.</p></div>
+    <div class="ev"><div class="yr">2020 · New York</div><h3>Head of Implementation, US</h3><p>Moves to New York for Splitit. The world locks down about a week later. He stays, sets up US implementation from a studio apartment, and learns every bagel place within a six-block radius. Wendy joins the tour.</p></div>
+    <div class="ev"><div class="yr">2021–22 · NYC ↔ Atlanta</div><h3>The Shuttle Years</h3><p>Splitit moves its global base to Atlanta's “Transaction Alley”. Omri becomes a human ping-pong ball between LaGuardia and Hartsfield-Jackson, with a brief, humid Miami interlude. Delta considers naming a seat after him.</p></div>
+    <div class="ev"><div class="yr">2022 · Tel Aviv</div><h3>Head of Implementation, Global Operations · The Homecoming</h3><p>Back in Israel, running implementation worldwide from the original room, which now has more than one WhatsApp group. Coffee machine finally fixed.</p></div>
+    <div class="ev"><div class="yr">2026 · New York</div><h3>The Comeback</h3><p>Nandan says the words: make Splitit New York awesome again. Omri's hand is up before the sentence ends. Suitcase: already packed. Wendy: already at the door.</p></div>
+  </div>
+</section>
+
 <section class="wrap" id="tour">
-  <div class="kicker">World tour 2026</div>
+  <div class="kicker">The world tour · complete routing</div>
   <h2 class="display">Tour dates</h2>
-  <p class="sub">A career-spanning run across two continents, one time zone at a time.</p>
+  <p class="sub">Two continents, four cities, one repeating loop. If it looks like a flight itinerary, that's because it was.</p>
   <div class="dates">
-    <div class="date"><div class="d">TLV<small>2019–2026</small></div><div><div class="city">Tel Aviv, Israel</div><div class="venue">Splitit HQ · The Good Coffee Machine Stage</div></div><span class="pill sold">Sold out</span></div>
-    <div class="date"><div class="d">JFK<small>arrival</small></div><div><div class="city">Queens, New York</div><div class="venue">Terminal 4 · Baggage carousel of destiny</div></div><span class="pill gold">Meet &amp; greet</span></div>
-    <div class="date"><div class="d">NYC<small>residency</small></div><div><div class="city">Manhattan, New York</div><div class="venue">Splitit New York · The Big Whiteboard</div></div><span class="pill live">Now playing</span></div>
-    <div class="date"><div class="d">BK<small>rumored</small></div><div><div class="city">Brooklyn, New York</div><div class="venue">Unannounced coffee crawl · “not a work thing”</div></div><span class="pill">Rumored</span></div>
-    <div class="date"><div class="d">TLV<small>encore</small></div><div><div class="city">Tel Aviv, Israel</div><div class="venue">Return leg · He'll say it was “fine” · It was legendary</div></div><span class="pill">Encore</span></div>
+    <div class="date"><div class="d">TLV<small>origins</small></div><div><div class="city">Tel Aviv, Israel</div><div class="venue">Born &amp; raised · The Original Run · Splitit HQ, one room, one WhatsApp group</div></div><span class="pill sold">Sold out</span></div>
+    <div class="date"><div class="d">JFK<small>2020</small></div><div><div class="city">New York, New York</div><div class="venue">Moved for Splitit · The Pandemic Tour · Every venue closed. He came anyway.</div></div><span class="pill">Legendary timing</span></div>
+    <div class="date"><div class="d">ATL<small>leg 1</small></div><div><div class="city">Atlanta, Georgia</div><div class="venue">Splitit global HQ · Transaction Alley · “Just for a week”</div></div><span class="pill">Round trip</span></div>
+    <div class="date"><div class="d">NYC<small>again</small></div><div><div class="city">New York, New York</div><div class="venue">Back to the studio apartment · Wendy unimpressed</div></div><span class="pill">Round trip</span></div>
+    <div class="date"><div class="d">ATL<small>leg 2</small></div><div><div class="city">Atlanta, Georgia</div><div class="venue">Same hotel · Same room · Front desk starts saying “welcome back”</div></div><span class="pill">Round trip</span></div>
+    <div class="date"><div class="d">NYC<small>again</small></div><div><div class="city">New York, New York</div><div class="venue">Laundry, bagel, laptop charger, repeat</div></div><span class="pill">Round trip</span></div>
+    <div class="date"><div class="d">MIA<small>interlude</small></div><div><div class="city">Miami, Florida</div><div class="venue">The Humidity Residency · Shorts at standup · Nobody asked questions</div></div><span class="pill">Sweaty</span></div>
+    <div class="date"><div class="d">ATL<small>leg ∞</small></div><div><div class="city">Atlanta, Georgia</div><div class="venue">Delta Medallion status achieved · Nandan knows him by his laptop stickers</div></div><span class="pill">Round trip</span></div>
+    <div class="date"><div class="d">TLV<small>2022–26</small></div><div><div class="city">Tel Aviv, Israel</div><div class="venue">The Homecoming · Extended run by popular demand · Coffee machine finally fixed</div></div><span class="pill gold">Encore</span></div>
+    <div class="date"><div class="d">NYC<small>2026</small></div><div><div class="city">Manhattan, New York</div><div class="venue">Splitit New York · The Comeback Residency · Making it awesome again</div></div><span class="pill live">Now playing</span></div>
+  </div>
+</section>
+
+<section class="wrap" id="vision">
+  <div class="kicker">The mission briefing</div>
+  <h2 class="display">The vision</h2>
+  <p class="sub">Every comeback tour needs a promoter. This one has a CEO.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>🎯 The brief</h3>
+      <p>Nandan Sheth took over as Splitit's CEO in 2022, moved the global base to Atlanta, and has been building the US business ever since. Somewhere along the way he looked at New York and said the words that started all of this: make Splitit New York awesome again. Short brief. Big brief.</p>
+    </div>
+    <div class="card hot">
+      <span class="ribbon">Volunteered</span>
+      <h3>✋ The volunteer</h3>
+      <p>Omri heard it, remembered he'd already survived New York once (in 2020, on hard mode), and put his hand up before anyone finished the sentence. He has implemented Splitit for merchants on three continents. Implementing it for one city is, frankly, a demotion in scope and a promotion in bagels.</p>
+    </div>
+    <div class="card">
+      <h3>🐶 The plus-one</h3>
+      <p>Wendy, Cavalier King Charles Spaniel, Chief Morale Officer and touring companion, reviewed the offer, approved the window seat, and signed with a paw. She goes everywhere he goes. She is not luggage. She is management.</p>
+    </div>
   </div>
 </section>
 
 <section class="wrap" id="tiers">
   <div class="kicker">Exclusive access</div>
   <h2 class="display">Fan tiers</h2>
-  <p class="sub">Because we're Splitit, every tier is available in installments. Zero interest. 100% Omri.</p>
+  <p class="sub">Because we're Splitit, every tier is available in installments on the card you already have. No new credit. No credit check. 100% Omri.</p>
   <div class="grid">
     <div class="card">
       <h3>Window Waver</h3>
@@ -180,30 +270,44 @@
       </ul>
       <button class="btn ghost" onclick="applaud(10)">Join for free</button>
     </div>
-    <div class="card hot">
-      <span class="ribbon">Most popular</span>
+    <div class="card">
       <h3>Coffee Companion</h3>
       <div class="price">$12</div><div class="per">or 3 × $4 / month</div>
       <p>Your daily dose of Don.</p>
       <ul>
         <li>One coffee run per day, his shout</li>
         <li>Unlimited “so how's Tel Aviv?” questions</li>
-        <li>Priority seating at the lunch table</li>
-        <li>Exclusive hummus recommendations</li>
+        <li>One (1) piece of baklava, while supplies last</li>
+        <li>Exclusive hummus rankings, updated weekly</li>
       </ul>
-      <button class="btn primary" onclick="applaud(25)">Subscribe (in installments)</button>
+      <button class="btn ghost" onclick="applaud(25)">Subscribe (in installments)</button>
     </div>
-    <div class="card">
-      <h3>Whiteboard VIP</h3>
-      <div class="price">$99</div><div class="per">or 3 × $33 / month</div>
-      <p>For the true connoisseur.</p>
+    <div class="card hot">
+      <span class="ribbon">Most popular</span>
+      <h3>The Omri Special</h3>
+      <div class="price">$50</div><div class="per">per month · or 3 × $16.67</div>
+      <p>Everything in Coffee Companion, plus the good stuff.</p>
       <ul>
         <li>Private whiteboard session (markers included)</li>
-        <li>Behind-the-scenes: how he really feels about the subway</li>
-        <li>Signed sticky note</li>
+        <li>Live merchant integration, narrated</li>
+        <li>Supervised Wendy petting (15 min, she decides when it ends)</li>
+        <li>Behind-the-scenes: how he really feels about LaGuardia</li>
+        <li>A signed sticky note that says “done, live”</li>
+      </ul>
+      <button class="btn primary" onclick="applaud(60)">Go Special</button>
+    </div>
+    <div class="card">
+      <h3>The Omri Weekend</h3>
+      <div class="price">$2,500</div><div class="per">or 12 × $208.33 · 0% interest</div>
+      <p>The full New York experience, the Omri way.</p>
+      <ul>
+        <li>Saturday: bagel crawl, six blocks, no notes</li>
+        <li>Wendy's Central Park walk (you hold the leash, she holds the power)</li>
+        <li>Sunday: a three-hour debate about which hummus place in TLV is best</li>
+        <li>One yellow cab ride with commentary</li>
         <li>Your name in the credits below</li>
       </ul>
-      <button class="btn ghost" onclick="applaud(60)">Go VIP</button>
+      <button class="btn ghost" onclick="applaud(120)">Book the weekend</button>
     </div>
   </div>
 </section>
@@ -213,25 +317,52 @@
   <h2 class="display">Rave reviews</h2>
   <div class="quotes">
     <div class="quote"><div class="stars">★★★★★</div><blockquote>“He walked in, said ‘quick question’, and forty minutes later we had a roadmap. Riveting.”</blockquote><cite>— The Tel Aviv Office</cite></div>
-    <div class="quote"><div class="stars">★★★★★</div><blockquote>“Finally, someone who reheats leftovers with the confidence of a Michelin chef.”</blockquote><cite>— The Kitchen Microwave, TLV</cite></div>
-    <div class="quote"><div class="stars">★★★★★</div><blockquote>“A performance so consistent I set my clock by his ‘on my way’ message.”</blockquote><cite>— Slack, #random</cite></div>
-    <div class="quote"><div class="stars">★★★★★</div><blockquote>“I've reviewed a lot of engineers. None of them have ever asked how I'm doing. He did.”</blockquote><cite>— The Office Plant</cite></div>
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“He moved to New York in 2020. If that's not commitment to the company, I don't know what is.”</blockquote><cite>— Someone in HR, still impressed</cite></div>
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“Nine years, five titles, three continents, zero missed go-lives. We checked.”</blockquote><cite>— The Implementation Team</cite></div>
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“Welcome back, Mr. Don. Your usual room is ready.”</blockquote><cite>— Front desk, a hotel in Atlanta</cite></div>
     <div class="quote"><div class="stars">★★★★☆</div><blockquote>“Great guy. Would've been five stars but he keeps calling it ‘soccer’ to fit in.”</blockquote><cite>— A Concerned Colleague</cite></div>
-    <div class="quote"><div class="stars">★★★★★</div><blockquote>“New York has 8 million people. It's about to have one more it can't stop talking about.”</blockquote><cite>— The Splitit NY Office (allegedly)</cite></div>
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“Woof.”</blockquote><cite>— Wendy, Chief Morale Officer (translation: five stars, would tour again)</cite></div>
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“Finally, someone who reheats leftovers with the confidence of a Michelin chef.”</blockquote><cite>— The Kitchen Microwave, TLV</cite></div>
+    <div class="quote"><div class="stars">★★★★★</div><blockquote>“New York has 8 million people. It's about to have one more it can't stop talking about. Plus a spaniel.”</blockquote><cite>— The Splitit NY Office (allegedly)</cite></div>
   </div>
 </section>
 
 <section class="wrap" id="gallery">
   <div class="kicker">Behind the scenes</div>
   <h2 class="display">Exclusive content</h2>
-  <p class="sub">Never-before-seen footage from the Tel Aviv years. Some items still in the vault pending Omri's approval.</p>
+  <p class="sub">Leaked footage from the New York years. Shot by a fan, from a moving vehicle, on what we can only assume was a potato. Authenticity: 100%. Focus: 12%.</p>
   <div class="gallery">
-    <div class="shot"><div class="ph"><b>☕</b>The Coffee Machine Years<br><small>(photo drop coming)</small></div><span class="lock">UNLOCKED</span><div class="cap">Episode 1 · “Where is the milk”</div></div>
-    <div class="shot"><div class="ph"><b>🧑‍💻</b>Deep in the Code<br><small>(photo drop coming)</small></div><span class="lock">UNLOCKED</span><div class="cap">Episode 2 · “It works on my machine”</div></div>
-    <div class="shot"><div class="ph"><b>🎤</b>The Standup Sessions<br><small>(photo drop coming)</small></div><span class="lock">UNLOCKED</span><div class="cap">Episode 3 · “No blockers”</div></div>
-    <div class="shot"><div class="ph"><b>🗽</b>First Day in NYC<br><small>(coming soon)</small></div><span class="lock">🔒 SOON</span><div class="cap">Episode 4 · “Which way is uptown”</div></div>
-    <div class="shot"><div class="ph"><b>🥯</b>The Bagel Verdict<br><small>(coming soon)</small></div><span class="lock">🔒 SOON</span><div class="cap">Episode 5 · A nation waits</div></div>
-    <div class="shot"><div class="ph"><b>🚇</b>Subway Diaries<br><small>(coming soon)</small></div><span class="lock">🔒 SOON</span><div class="cap">Episode 6 · “Why is it hot down here”</div></div>
+    <div class="shot"><img src="img/ep1-cab.jpg" alt="Omri in a yellow cab at night, gazing out of the window"><span class="lock">UNLOCKED</span><div class="cap"><b>Episode 1 · The Yellow Cab Confessional</b>“I moved here for Splitit in 2020. The city shut down a week later. I stayed.” Cue the strings.</div></div>
+    <div class="shot"><img src="img/ep2-paparazzi.jpg" alt="Very blurry paparazzi-style photo of Omri in a cab"><span class="lock">PAPARAZZI</span><div class="cap"><b>Episode 2 · The 1am Integration</b>Omri explaining authorization holds vs. charges to a cab driver. The driver is now a Splitit merchant. The blur is art.</div></div>
+    <div class="shot"><img src="img/ep3-shortcut.jpg" alt="Omri in a cab passing a green wall"><span class="lock">UNLOCKED</span><div class="cap"><b>Episode 3 · Airport Run #47</b>LaGuardia → Atlanta, again. “The driver says it's faster this way.” It was not faster this way.</div></div>
+    <div class="shot"><img src="img/ep4-times-square.jpg" alt="Selfie in Times Square at night"><span class="lock">UNLOCKED</span><div class="cap"><b>Episode 4 · Times Square, with his tour manager</b>One of them knows where the hotel is. One of them is Head of Implementation and still uses Maps.</div></div>
+    <div class="shot"><img src="img/ep5-peace.jpg" alt="Omri flashing a peace sign in Times Square"><span class="lock">ICONIC</span><div class="cap"><b>Episode 5 · The Peace Sign™</b>Nine years at Splitit, five job titles, one hand gesture. Rated five stars by three tourists who thought he was someone.</div></div>
+    <div class="shot"><div class="ph"><b>🏢</b>The Comeback<br><small>(coming soon)</small></div><span class="lock">🔒 SOON</span><div class="cap"><b>Episode 6 · First day back at Splitit NY</b>Wendy's first New York bagel. Omri's first “in Tel Aviv we usually…”. Both within the hour.</div></div>
+  </div>
+</section>
+
+<section class="wrap" id="wendy">
+  <div class="kicker">Also starring</div>
+  <h2 class="display">The Don entourage</h2>
+  <p class="sub">No headliner tours alone. Meet the people (and the spaniel) who make the show possible.</p>
+  <div class="grid">
+    <div class="card hot">
+      <span class="ribbon">Top billing</span>
+      <h3>🐶 Wendy</h3>
+      <p><strong>Cavalier King Charles Spaniel · Chief Morale Officer · Head of Under-Desk Operations.</strong> Travels everywhere with Omri and is, legally and spiritually, part of him. Two continents, four cities, countless Zoom cameos. Has never missed a standup. Has never said anything in one either. Tour rider: window seat, belly rubs on demand, and zero questions about “who's a good girl” — she knows.</p>
+    </div>
+    <div class="card">
+      <h3>🏙️ The Tel Aviv office</h3>
+      <p><strong>Original fan club · Founding members since 2017.</strong> Built this website instead of finishing the sprint. Will claim the New York office “borrowed” him. Expects him back for the encore, with stories and at least one New York bagel in his carry-on.</p>
+    </div>
+    <div class="card">
+      <h3>🛎️ The Atlanta front desk</h3>
+      <p><strong>Honorary tour crew.</strong> Has checked Omri in more times than anyone can count, knows his room preference, his coffee order and his flight number. Has never once asked why he keeps coming back. They know. It's Nandan.</p>
+    </div>
+    <div class="card">
+      <h3>🎤 Nandan Sheth</h3>
+      <p><strong>CEO · Executive Producer of the Comeback Tour.</strong> Runs Splitit from Atlanta, which is why Omri has seen the inside of Hartsfield-Jackson more than his own kitchen. Set the mission: make Splitit New York awesome again. Approved the dog.</p>
+    </div>
   </div>
 </section>
 
@@ -239,11 +370,14 @@
   <div class="kicker">Frequently asked</div>
   <h2 class="display">FAQ</h2>
   <details open><summary>Is this related to any other website with a similar name?</summary><p>Absolutely not. This is a fan club for one very specific colleague. Everyone stays fully clothed and fully caffeinated. The only thing exposed here is our admiration.</p></details>
-  <details><summary>Will Omri bring hummus?</summary><p>Yes. He will also have strong opinions about the hummus already in New York. Prepare accordingly.</p></details>
+  <details><summary>Will Omri bring baklava?</summary><p>Yes. Not enough for everyone. It will be gone by 10:15. The Coffee Companion tier guarantees one piece; the Omri Special guarantees he'll tell you which bakery it came from and why it's better than the one you like.</p></details>
+  <details><summary>Will Omri bring hummus?</summary><p>He will bring opinions about hummus. He will have strong opinions about the hummus already in New York. Prepare accordingly.</p></details>
+  <details><summary>Is Wendy coming?</summary><p>Wendy is not coming with Omri. Omri is coming with Wendy. Know the difference. She has her own seat, her own paperwork and, we suspect, her own Slack account.</p></details>
+  <details><summary>What does “Head of Implementation, Global Operations” actually mean?</summary><p>It means when a merchant wants to offer installments on their customers' existing cards, Omri's team makes it go live. It also means he has said “it works in sandbox” on three continents.</p></details>
+  <details><summary>Why does he keep flying to Atlanta?</summary><p>Splitit's global base is in Atlanta, and the CEO is there. Also, at this point the hotel has his preferences saved and it would be rude to stop.</p></details>
   <details><summary>Can I request a song?</summary><p>Omri does not take requests. He does, however, take “quick questions,” which are never quick.</p></details>
-  <details><summary>How long is the residency?</summary><p>Long enough to learn the subway map, not long enough to stop complaining about it.</p></details>
-  <details><summary>What should the NY office prepare?</summary><p>A good chair, a working coffee machine, a whiteboard, and a healthy amount of patience for the phrase “in Tel Aviv we usually…”.</p></details>
-  <details><summary>Who made this?</summary><p>The Tel Aviv office, with love, mild jealousy, and far too much free time on a Thursday afternoon.</p></details>
+  <details><summary>What should the NY office prepare?</summary><p>A good chair, a working coffee machine, a whiteboard, a water bowl at floor level, and a healthy amount of patience for the phrase “in Tel Aviv we usually…”.</p></details>
+  <details><summary>Who made this?</summary><p>The Tel Aviv office, with love, mild jealousy, and far too much free time on a Thursday afternoon. Splitit's actual marketing team was not consulted and would like that noted.</p></details>
 </section>
 
 <section class="applause wrap">
@@ -254,8 +388,8 @@
 
 <footer>
   <div class="wrap">
-    <div class="logo">ONLYOMRI.COM</div>
-    <div>A wholesome tribute from the Splitit Tel Aviv office to the Splitit New York office.<br>Not affiliated with any platform of a similar name. No subscriptions were actually sold. Installments were, however, very fair.<br>Omri — we miss you already. Go get 'em.</div>
+    <div class="flogo">ONLYOMRI.COM</div>
+    <div>A wholesome tribute from the Splitit Tel Aviv office to the Splitit New York office.<br>Not affiliated with any platform of a similar name. No subscriptions were actually sold. Installments were, however, very fair, and required no new credit.<br>Omri — we miss you already. Go make it awesome. Give Wendy a bagel from us.</div>
   </div>
 </footer>
 
@@ -268,7 +402,7 @@
     const now=new Date(); let diff=ARRIVAL-now;
     if(diff<=0){
       document.getElementById('count').innerHTML='<div style="grid-column:1/-1"><b>HE HAS LANDED</b><small>New York, you\'re welcome</small></div>';
-      document.getElementById('count-note').textContent='The residency is officially underway.';
+      document.getElementById('count-note').textContent='The residency is officially underway. Wendy has cleared customs.';
       return;
     }
     const d=Math.floor(diff/864e5); diff-=d*864e5;
@@ -294,7 +428,7 @@
   // confetti
   const cv=document.getElementById('confetti'),ctx=cv.getContext('2d');let parts=[];
   function size(){cv.width=innerWidth;cv.height=innerHeight}size();addEventListener('resize',size);
-  const colors=['#ff3fa4','#ffd166','#4de3ff','#ffffff','#b26cff'];
+  const colors=['#20A5A6','#ffd166','#85C1C3','#ffffff','#0B8286'];
   function burst(n){
     for(let i=0;i<n;i++)parts.push({x:innerWidth/2+(Math.random()-.5)*200,y:innerHeight*.35,vx:(Math.random()-.5)*14,vy:-Math.random()*14-4,r:Math.random()*6+3,c:colors[i%colors.length],a:1,rot:Math.random()*6});
     if(!anim)loop();
